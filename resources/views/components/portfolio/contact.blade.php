@@ -58,12 +58,18 @@
                 </div>
             </div>
 
-            {{-- Education Card --}}
+            {{-- Education & Certificates Card --}}
             <div class="edu-card glass-card reveal-right">
                 <h3>Education</h3>
                 @foreach($education as $edu)
                 <div class="edu-item">
+                    @if(isset($edu['logo']))
+                    <div class="edu-logo-wrap">
+                        <img src="{{ $edu['logo'] }}" alt="{{ $edu['institution'] }} Logo" class="edu-logo" onerror="this.style.display='none'">
+                    </div>
+                    @else
                     <div class="edu-icon">🎓</div>
+                    @endif
                     <div class="edu-details">
                         <h4>{{ $edu['degree'] }}</h4>
                         <p class="edu-institution">{{ $edu['institution'] }}</p>
@@ -74,6 +80,28 @@
                     </div>
                 </div>
                 @endforeach
+
+                @if(isset($certificates) && count($certificates) > 0)
+                <h3 style="margin-top: 2rem;">Certificates</h3>
+                @foreach($certificates as $cert)
+                <div class="edu-item">
+                    @if(isset($cert['logo']))
+                    <div class="edu-logo-wrap">
+                        <img src="{{ $cert['logo'] }}" alt="{{ $cert['issuer'] }} Logo" class="edu-logo" onerror="this.style.display='none'">
+                    </div>
+                    @else
+                    <div class="edu-icon">📜</div>
+                    @endif
+                    <div class="edu-details">
+                        <h4>{{ $cert['title'] }}</h4>
+                        <p class="edu-institution">{{ $cert['issuer'] }}</p>
+                        <div class="edu-meta">
+                            <span class="edu-date">{{ $cert['date'] }}</span>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+                @endif
 
                 <div class="availability-badge">
                     <div class="avail-pulse"></div>

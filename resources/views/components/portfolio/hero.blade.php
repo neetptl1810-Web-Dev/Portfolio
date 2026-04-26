@@ -37,12 +37,12 @@
 
         <div class="hero-stats" id="hero-stats">
             <div class="stat">
-                <span class="stat-num">1.5+</span>
+                <span class="stat-num">3+</span>
                 <span class="stat-label">Years Experience</span>
             </div>
             <div class="stat-divider"></div>
             <div class="stat">
-                <span class="stat-num">3+</span>
+                <span class="stat-num">5+</span>
                 <span class="stat-label">Projects Built</span>
             </div>
             <div class="stat-divider"></div>

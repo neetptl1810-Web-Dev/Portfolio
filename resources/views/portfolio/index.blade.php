@@ -13,9 +13,10 @@
     {{-- Skills --}}
     @include('components.portfolio.skills', ['skills' => $data['skills']])
 
-    {{-- Education & Contact --}}
+    {{-- Education, Certificates & Contact --}}
     @include('components.portfolio.contact', [
         'personal' => $data['personal'],
-        'education' => $data['education']
+        'education' => $data['education'],
+        'certificates' => $data['certificates'] ?? []
     ])
 @endsection
