@@ -22,27 +22,18 @@ class PortfolioController extends Controller
             ],
             'experience' => [
                 [
-                    'company' => 'Caterpillar Desford',
-                    'title' => 'Part Assembler Operative',
-                    'date' => 'April 2026 — Present',
-                    'logo' => 'https://upload.wikimedia.org/wikipedia/commons/c/ce/Caterpillar-shortened.svg',
-                    'highlights' => [
-                        'Met strict takt time targets in lean manufacturing, ensuring on-time delivery and smooth production flow.',
-                        'Assembled components to exact specifications with precision, minimizing defects and rework.',
-                        'Applied disciplined time management to complete tasks efficiently under tight deadlines.',
-                        'Collaborated with cross-functional teams to troubleshoot issues and maintain safety and quality standards.'
-                    ]
-                ],
-                [
                     'company' => 'Weather Website',
                     'title' => 'Project — Full Stack Developer',
-                    'date' => 'Apr 2026 — Present',
+                    'date' => 'April 2026',
                     'logo' => asset('internicon.ico'),
                     'highlights' => [
                         'Built a Laravel-based weather web app using APIs to display real-time weather data.',
                         'Designed a responsive and user-friendly interface for smooth cross-device experience.',
                         'Implemented city search functionality with fast and accurate weather updates.',
                         'Enhanced UI/UX and fixed layout issues to improve performance and usability.'
+                    ],
+                    'links' => [
+                        'Live Demo' => 'https://website-dev.infinityfreeapp.com/',
                     ]
                 ],
                 [
